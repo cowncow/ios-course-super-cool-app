@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var Background: UIImageView!
+    @IBOutlet weak var SuperButton: UIButton!
+    @IBOutlet weak var BoomTitle: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +24,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func SuperUp(sender: AnyObject) {
+        Background.hidden = false
+        BoomTitle.hidden = false
+        SuperButton.hidden = true   
+    }
 
 }
 
